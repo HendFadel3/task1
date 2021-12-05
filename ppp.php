@@ -18,10 +18,6 @@ else{
     }
 
 
- /*
-echo"Testpro";
-$num1=1;
-$num2=6;
- var_dump($num1==$num2);
-*/
+ 
+
 ?>
