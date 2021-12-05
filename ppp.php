@@ -9,12 +9,18 @@ if($unit>0 && $unit<=50)
     }
     elseif($unit>50 && $unit<=150)
     {
-        $bill=$unit*4.00;
+        $firstPart=50*3.50;
+        $remainUnitPrice=($unit-50)*4.00;
+        $bill= $firstPart + $remainUnitPrice ;
         echo $bill;
     }
 else{
-    $bill=$unit*6.50;
+        $firstPart=50*3.50;
+        $secondPart=100*4.00;
+        $remainUnitPrice=($unit-150)*6.50;
+        $bill=$firstPart+$secondPart+$remainUnitPrice;
         echo $bill;
+    
     }
 
 
