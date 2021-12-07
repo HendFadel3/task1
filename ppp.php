@@ -4,7 +4,7 @@ function Clean($input){
    return   strip_tags(trim($input));
 }
 if($_SERVER['REQUEST_METHOD'] == "POST") {
-    $name     =Clean($_POST['name'] ) ;
+    $name     =clean($_POST['name'] ) ;
     $password =$_POST['password'] ;
     $email    =clean($_POST['email']);
     $address  =clean($_POST['address']);
